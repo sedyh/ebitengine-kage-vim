@@ -1,0 +1,350 @@
+priority -50
+
+snippet fragment "The basis for the shader"
+package main
+
+func Fragment(pos vec4, tex vec2, col vec4) vec4 {
+	${0:${VISUAL}}
+	return vec4(0.5, 0.0, 0.0, 1.0)
+}
+endsnippet
+
+snippet vec2 "Usage vec2(x, y) or vec2(x)"
+vec2(0, 0)
+endsnippet
+
+snippet vec3 "Usage vec3(x, y, z) or vec3(x)"
+vec3(0, 0, 0)
+endsnippet
+
+snippet vec4 "Usage vec4(x, y, z, w) or vec4(x)"
+vec4(0, 0, 0, 0)
+endsnippet
+
+snippet mat2 "Usage mat2(a, b, c, d)"
+mat2(
+	0, 0,
+	0, 0,
+)
+endsnippet
+
+snippet mat3 "Usage mat3(a, b, c, d, e, f, g, h, i)"
+mat3(
+	0, 0, 0,
+	0, 0, 0,
+	0, 0, 0,
+)
+endsnippet
+
+snippet mat4 "Usage mat4(a, b, c, d, e, f, g, h, i, j, k, l"
+mat4(
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+	0, 0, 0, 0,
+)
+endsnippet
+
+snippet sin "Usage sin(x T), T is float or vec"
+sin(${0:${VISUAL}})
+endsnippet
+
+snippet cos "Usage cos(x T), T is float or vec"
+cos(${0:${VISUAL}})
+endsnippet
+
+snippet tan "Usage tan(x T), T is float or vec"
+tan(${0:${VISUAL}})
+endsnippet
+
+snippet asin "Usage asin(x T), T is float or vec"
+asin(${0:${VISUAL}})
+endsnippet
+
+snippet acos "Usage acos(x T), T is float or vec"
+acos(${0:${VISUAL}})
+endsnippet
+
+snippet atan "Usage atan(y_over_x T), T is float or vec"
+atan(${0:${VISUAL}})
+endsnippet
+
+snippet atan2 "Usage atan2(x, y T), T is float or vec"
+atan2(${0:${VISUAL}})
+endsnippet
+
+snippet pow "Usage pow(x, y T), T is float or vec"
+pow(${0:${VISUAL}})
+endsnippet
+
+snippet exp "Usage exp(x T), T is float or vec"
+exp(${0:${VISUAL}})
+endsnippet
+
+snippet log "Usage log(x T), T is float or vec"
+log(${0:${VISUAL}})
+endsnippet
+
+snippet exp2 "Usage exp2(x T), T is float or vec"
+exp2(${0:${VISUAL}})
+endsnippet
+
+snippet log2 "Usage log2(x T), T is float or vec"
+log2(${0:${VISUAL}})
+endsnippet
+
+snippet sqrt "Usage sqrt(x T), T is float or vec"
+sqrt(${0:${VISUAL}})
+endsnippet
+
+snippet inversesqrt "Usage inversesqrt(x T), T is float or vec"
+inversesqrt(${0:${VISUAL}})
+endsnippet
+
+snippet abs "Usage abs(x T), T is float or vec"
+abs(${0:${VISUAL}})
+endsnippet
+
+snippet sign "Usage sign(x T), T is float or vec"
+sign(${0:${VISUAL}})
+endsnippet
+
+snippet floor "Usage floor(x T), T is float or vec"
+floor(${0:${VISUAL}})
+endsnippet
+
+snippet ceil "Usage ceil(x T), T is float or vec"
+ceil(${0:${VISUAL}})
+endsnippet
+
+snippet fract "Usage fract(x T), T is float or vec"
+fract(${0:${VISUAL}})
+endsnippet
+
+snippet mod "Usage mod(x, y T), T is float or vec"
+mod(${0:${VISUAL}})
+endsnippet
+
+snippet min "Usage min(x, y T), T is float or vec"
+min(${0:${VISUAL}})
+endsnippet
+
+snippet max "Usage max(x, y T), T is float or vec"
+max(${0:${VISUAL}})
+endsnippet
+
+snippet clamp "Usage clap(x, min, max T), T is float or vec"
+clamp(${0:${VISUAL}})
+endsnippet
+
+snippet mix "Usage mix(x, y, a T), T is float or vec"
+mix(${0:${VISUAL}})
+endsnippet
+
+snippet step "Usage step(edge, x T), T is float or vec"
+step(${0:${VISUAL}})
+endsnippet
+
+snippet smoothstep "Usage smoothstep(edge0, edge1, x T), T is float or vec"
+smoothstep(${0:${VISUAL}})
+endsnippet
+
+snippet length "Usage length(x T), T is float or vec"
+length(${0:${VISUAL}})
+endsnippet
+
+snippet distance "Usage distance(p0, p1 T), T is float or vec"
+distance(${0:${VISUAL}})
+endsnippet
+
+snippet dot "Usage dot(x, y T), T is float or vec"
+dot(${0:${VISUAL}})
+endsnippet
+
+snippet cross "Usage cross(x, y vec3)"
+cross(${0:${VISUAL}})
+endsnippet
+
+snippet normalize "Usage normalize(x T), T is float or vec"
+normalize(${0:${VISUAL}})
+endsnippet
+
+snippet faceforward "Usage faceforward(n, i, nref T), T is float or vec"
+faceforward(${0:${VISUAL}})
+endsnippet
+
+snippet reflect "Usage reflect(i, n T), T is float or vec"
+reflect(${0:${VISUAL}})
+endsnippet
+
+snippet refract "Usage refract(i, n T, eta float), T is float or vec"
+refract(${0:${VISUAL}})
+endsnippet
+
+snippet transpose "Usage transpose(x T), T is mat"
+transpose(${0:${VISUAL}})
+endsnippet
+
+snippet dfdx "Usage dfdx(x T), T is float or vec"
+dfdx(${0:${VISUAL}})
+endsnippet
+
+snippet dfdy "Usage dfdy(x T), T is float or vec"
+dfdy(${0:${VISUAL}})
+endsnippet
+
+snippet fwidth "Usage fwidth(x T), T is float or vec"
+fwidth(${0:${VISUAL}})
+endsnippet
+
+snippet kage:sin "Usage sin(x T), T is float or vec"
+sin(${0:${VISUAL}})
+endsnippet
+
+snippet kage:cos "Usage cos(x T), T is float or vec"
+cos(${0:${VISUAL}})
+endsnippet
+
+snippet kage:tan "Usage tan(x T), T is float or vec"
+tan(${0:${VISUAL}})
+endsnippet
+
+snippet kage:asin "Usage asin(x T), T is float or vec"
+asin(${0:${VISUAL}})
+endsnippet
+
+snippet kage:acos "Usage acos(x T), T is float or vec"
+acos(${0:${VISUAL}})
+endsnippet
+
+snippet kage:atan "Usage atan(y_over_x T), T is float or vec"
+atan(${0:${VISUAL}})
+endsnippet
+
+snippet kage:atan2 "Usage atan2(x, y T), T is float or vec"
+atan2(${0:${VISUAL}})
+endsnippet
+
+snippet kage:pow "Usage pow(x, y T), T is float or vec"
+pow(${0:${VISUAL}})
+endsnippet
+
+snippet kage:exp "Usage exp(x T), T is float or vec"
+exp(${0:${VISUAL}})
+endsnippet
+
+snippet kage:log "Usage log(x T), T is float or vec"
+log(${0:${VISUAL}})
+endsnippet
+
+snippet kage:exp2 "Usage exp2(x T), T is float or vec"
+exp2(${0:${VISUAL}})
+endsnippet
+
+snippet kage:log2 "Usage log2(x T), T is float or vec"
+log2(${0:${VISUAL}})
+endsnippet
+
+snippet kage:sqrt "Usage sqrt(x T), T is float or vec"
+sqrt(${0:${VISUAL}})
+endsnippet
+
+snippet kage:inversesqrt "Usage inversesqrt(x T), T is float or vec"
+inversesqrt(${0:${VISUAL}})
+endsnippet
+
+snippet kage:abs "Usage abs(x T), T is float or vec"
+abs(${0:${VISUAL}})
+endsnippet
+
+snippet kage:sign "Usage sign(x T), T is float or vec"
+sign(${0:${VISUAL}})
+endsnippet
+
+snippet kage:floor "Usage floor(x T), T is float or vec"
+floor(${0:${VISUAL}})
+endsnippet
+
+snippet kage:ceil "Usage ceil(x T), T is float or vec"
+ceil(${0:${VISUAL}})
+endsnippet
+
+snippet kage:fract "Usage fract(x T), T is float or vec"
+fract(${0:${VISUAL}})
+endsnippet
+
+snippet kage:mod "Usage mod(x, y T), T is float or vec"
+mod(${0:${VISUAL}})
+endsnippet
+
+snippet kage:min "Usage min(x, y T), T is float or vec"
+min(${0:${VISUAL}})
+endsnippet
+
+snippet kage:max "Usage max(x, y T), T is float or vec"
+max(${0:${VISUAL}})
+endsnippet
+
+snippet kage:clamp "Usage clap(x, min, max T), T is float or vec"
+clamp(${0:${VISUAL}})
+endsnippet
+
+snippet kage:mix "Usage mix(x, y, a T), T is float or vec"
+mix(${0:${VISUAL}})
+endsnippet
+
+snippet kage:step "Usage step(edge, x T), T is float or vec"
+step(${0:${VISUAL}})
+endsnippet
+
+snippet kage:smoothstep "Usage smoothstep(edge0, edge1, x T), T is float or vec"
+smoothstep(${0:${VISUAL}})
+endsnippet
+
+snippet kage:length "Usage length(x T), T is float or vec"
+length(${0:${VISUAL}})
+endsnippet
+
+snippet kage:distance "Usage distance(p0, p1 T), T is float or vec"
+distance(${0:${VISUAL}})
+endsnippet
+
+snippet kage:dot "Usage dot(x, y T), T is float or vec"
+dot(${0:${VISUAL}})
+endsnippet
+
+snippet kage:cross "Usage cross(x, y vec3)"
+cross(${0:${VISUAL}})
+endsnippet
+
+snippet kage:normalize "Usage normalize(x T), T is float or vec"
+normalize(${0:${VISUAL}})
+endsnippet
+
+snippet kage:faceforward "Usage faceforward(n, i, nref T), T is float or vec"
+faceforward(${0:${VISUAL}})
+endsnippet
+
+snippet kage:reflect "Usage reflect(i, n T), T is float or vec"
+reflect(${0:${VISUAL}})
+endsnippet
+
+snippet kage:refract "Usage refract(i, n T, eta float), T is float or vec"
+refract(${0:${VISUAL}})
+endsnippet
+
+snippet kage:transpose "Usage transpose(x T), T is mat"
+transpose(${0:${VISUAL}})
+endsnippet
+
+snippet kage:dfdx "Usage dfdx(x T), T is float or vec"
+dfdx(${0:${VISUAL}})
+endsnippet
+
+snippet kage:dfdy "Usage dfdy(x T), T is float or vec"
+dfdy(${0:${VISUAL}})
+endsnippet
+
+snippet kage:fwidth "Usage fwidth(x T), T is float or vec"
+fwidth(${0:${VISUAL}})
+endsnippet
