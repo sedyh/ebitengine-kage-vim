@@ -36,10 +36,10 @@ Ebitengine adopts an original shading language 'Kage'. This has a compatible syn
   Plug 'SirVer/ultisnips'
   ```
 
-  Install `sedyh/ebitengine-kage-support` to enable syntax highlighting and snippet support for Kage:
+  Install `sedyh/ebitengine-kage-vim` to enable syntax highlighting and snippet support for Kage:
 
   ```vim
-  Plug 'sedyh/ebitengine-kage-support', {'rtp': 'vim'}
+  Plug 'sedyh/ebitengine-kage-vim'
   ```
   
 </details>
