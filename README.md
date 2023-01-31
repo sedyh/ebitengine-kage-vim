@@ -46,7 +46,7 @@ Ebitengine adopts an original shading language 'Kage'. This has a compatible syn
 
 ### Other editors
 
-[![](https://img.shields.io/badge/source-555555?style=for-the-badge&logo=sublimetext&logoColor=ba9759)](https://github.com/sedyh/ebitengine-kage-sublime)[![](https://img.shields.io/badge/download-ba9759?style=for-the-badge)](https://packagecontrol.io)<br>
+[![](https://img.shields.io/badge/source-555555?style=for-the-badge&logo=sublimetext&logoColor=ba9759)](https://github.com/sedyh/ebitengine-kage-sublime)[![](https://img.shields.io/badge/download-ba9759?style=for-the-badge)](https://packagecontrol.io/packages/Ebitengine%20Kage)<br>
 [![](https://img.shields.io/badge/source-555555?style=for-the-badge&logo=visualstudiocode&logoColor=72a9d4)](https://github.com/sedyh/ebitengine-kage-vscode)[![](https://img.shields.io/badge/download-72a9d4?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=sedyh.ebitengine-kage)
 
 
